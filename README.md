@@ -1,16 +1,3 @@
-# facebookappui
+![47BCDE0D-766B-47C6-A812-DAE88DDD36C5_4_5005_c](https://user-images.githubusercontent.com/96878908/184499400-ed2010b1-0e32-4138-871f-1ccee69e2bce.jpeg),![FF660A55-7A64-4EA3-91DD-FFB25E25D52A_4_5005_c](https://user-images.githubusercontent.com/96878908/184499424-874c1e02-eebb-4b41-8582-beaa2894d59e.jpeg) 
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Main page of Facebook's UI.

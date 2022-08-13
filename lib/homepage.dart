@@ -23,10 +23,10 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
             child: Row(
               children:  [
-                const Text(
+                 Text(
                   'facebook',
                   style: TextStyle(
-                    color: Colors.blueAccent,
+                    color: Colors.grey[400],
                       fontWeight: FontWeight.bold,
                       fontSize: 25),
                 ),

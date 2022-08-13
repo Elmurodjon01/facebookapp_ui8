@@ -17,23 +17,23 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.grey,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         actions: [
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
             child: Row(
-              children: const [
-                Text(
+              children:  [
+                const Text(
                   'facebook',
                   style: TextStyle(
                     color: Colors.blueAccent,
                       fontWeight: FontWeight.bold,
                       fontSize: 25),
                 ),
-                SizedBox(width: 200,),
-                FaIcon(FontAwesomeIcons.facebookMessenger, color: Color(0xFF384CFF),),
-                SizedBox(width: 15,),
-                FaIcon(FontAwesomeIcons.camera, color: Color(0xFF384CFF),),
+                const SizedBox(width: 200,),
+                FaIcon(FontAwesomeIcons.facebookMessenger, color: Colors.grey[400],),
+                const SizedBox(width: 15,),
+                FaIcon(FontAwesomeIcons.camera, color: Colors.grey[400],),
               ],
             ),
           ),
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
           //create a post
           Container(
             height: 120,
-            color: Colors.white,
+            color: Colors.black,
             padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
             child: Column(
               children: [
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           decoration: InputDecoration(
                             hintText: 'What\'s on your mind, John?',
                             border: InputBorder.none,
-                            hintStyle: TextStyle(color: Colors.grey[700],),
+                            hintStyle: TextStyle(color: Colors.grey[400],),
                           ),
                         ),
                       ),
@@ -81,10 +81,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       Expanded(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
+                            children:  [
                               Icon(Icons.video_call, color: Colors.red,),
                               SizedBox(width: 5,),
-                              Text('Live'),
+                              Text('Live', style: TextStyle(color: Colors.grey[400]),),
                             ],
                           ),
                       ),
@@ -96,10 +96,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       Expanded(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children:  [
                             Icon(Icons.photo, color: Colors.green,),
                             SizedBox(width: 5,),
-                            Text('Photo'),
+                            Text('Photo', style: TextStyle(color: Colors.grey[400]),),
                           ],
                         ),
                       ),
@@ -111,10 +111,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       Expanded(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children:  [
                             Icon(Icons.location_on, color: Colors.red,),
                             SizedBox(width: 5,),
-                            Text('Check in'),
+                            Text('Check in', style: TextStyle(color: Colors.grey[400]),),
                           ],
                         ),
                       ),
@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           //stories
           Container(
-            color: Colors.white,
+            color: Colors.black,
             height: 200,
             margin: const EdgeInsets.only(top: 10,),
             padding: const EdgeInsets.only(top: 10, bottom: 10,),
@@ -173,6 +173,24 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
+    //   bottomNavigationBar: BottomNavigationBar(
+    //     items: const <BottomNavigationBarItem>[
+    // BottomNavigationBarItem(
+    //   icon: Icon(Icons.home),
+    // ),
+    //       BottomNavigationBarItem(
+    //         icon: Icon(Icons.home),
+    //       ),
+    //       BottomNavigationBarItem(
+    //         icon: Icon(Icons.home),
+    //       ),
+    //       BottomNavigationBarItem(
+    //         icon: Icon(Icons.home),
+    //       ),
+    //     ],
+    //     currentIndex: _navigatorIndex,
+    //
+    //   ),
     );
   }
   Widget storyMaker({storyImage, userImage, userName}){
@@ -226,7 +244,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget myFeed({userName, userImage, feedTime, feedText, feedImage}){
     return Container(
       margin: const EdgeInsets.only(top: 10),
-      color: Colors.white,
+      color: Colors.black,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -247,7 +265,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(userName, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey[900],
+                          Text(userName, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey[400],
                           fontSize: 18,),),
                           const SizedBox(height: 3,),
                           Text(feedTime, style: const TextStyle(fontSize: 15, color: Colors.grey),),
@@ -261,7 +279,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 const SizedBox(height: 10,),
-                Text(feedText, style: TextStyle(fontSize: 15, color: Colors.grey[800], height: 1.5, letterSpacing: .7),),
+                Text(feedText, style: TextStyle(fontSize: 15, color: Colors.grey[400], height: 1.5, letterSpacing: .7),),
 
               ],
             ),
@@ -291,10 +309,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: makeLove(),
                       ),
                       SizedBox(width: 5,),
-                      Text('2.5K', style: TextStyle(fontSize: 15, color: Colors.grey[800]),)
+                      Text('2.5K', style: TextStyle(fontSize: 15, color: Colors.grey[400]),)
                     ],
                   ),
-                  Text('400 comments', style: TextStyle(fontSize: 13, color: Colors.grey[800]),),
+                  Text('400 comments', style: TextStyle(fontSize: 13, color: Colors.grey[400]),),
                 ],
             ),
           ),
